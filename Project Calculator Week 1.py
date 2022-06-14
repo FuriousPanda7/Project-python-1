@@ -2,7 +2,7 @@ name = str(input("PLZ Enter Your First Name: "))
 family = str(input("Plz Enter Your Last Name: "))
 print(f"Welcome To This App , {name} {family} ")
 #namayeshe menu
-print(" 1-Addition\n 2-Subtraction\n 3-Multiplication\n 4-Division\n 5-Exponentiation\n 6-Modulus\n 7-Exit\n ")
+print(" ➕ 1-Addition\n ➖ 2-Subtraction\n ❌ 3-Multiplication\n ➗ 4-Division\n 💪 5-Exponentiation\n 🤏 6-Modulus\n 🤚 7-Exit\n ")
 #Entekhab Menu
 number1 = int(input(f"Plz Enter Your First Number {name} {family} : "))
 number2 = int(input(f"Plz Enter Your Second Number {name} {family} : "))
@@ -52,5 +52,7 @@ elif choosemenu == "7" or choosemenu =="Exit" or choosemenu =="exit":
 #Dar Soorati Ke Adadha Ya Text Eshtebah Bashad
 else:
     print(f"{name} {family} Shoma Adade Eshtebah Dar Menu Vared Kardid Ya In ke Gozine Morde Nazar Ra Eshtebah Type Kardid")
+#Goodbye
+print(f"Thanks for choosing Our App 😊, Dear {name} {family}")    
     
     
