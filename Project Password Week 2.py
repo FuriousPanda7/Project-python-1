@@ -14,7 +14,7 @@ if len(password) >= 8 :
                 print("Your Password Must Not Start With A Number ")
 
         else:
-             print("Your Password Must Contain Numbers And Words And Must Have Space At the Begginig Or Between Characters ")
+             print("Your Password Must Contain Numbers And Words And Must Not Have Space At the Begginig Or Between Characters ")
     else:
         print("Your Password Should Not Be Empty")
 else:
