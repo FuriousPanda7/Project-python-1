@@ -1,6 +1,6 @@
 
 
-from operator import index
+
 import os
 import random
 
@@ -19,12 +19,8 @@ userTurnGame = input(" Plz Choose Your Choice From One Of Three Below Items\n 1-
 pcPoint = 0
 userPoint = 0
 
-while pcPoint <=3 or userPoint <= 3:
     
-    
-
-
-    if userTurnGame == "1" or userTurnGame == "Rock" or userTurnGame == "rock":
+if userTurnGame == "1" or userTurnGame == "Rock" or userTurnGame == "rock":
         print("You Are Playing Rock \n ")
     
         if pcPlay == "Rock":
@@ -42,7 +38,7 @@ while pcPoint <=3 or userPoint <= 3:
             userPoint += 1
 
     
-    elif userTurnGame == "2" or userTurnGame == "Paper" or userTurnGame == "paper": 
+elif userTurnGame == "2" or userTurnGame == "Paper" or userTurnGame == "paper": 
         print("You Are Playing Paper\n")
 
         if pcPlay == "Rock":
@@ -60,7 +56,7 @@ while pcPoint <=3 or userPoint <= 3:
             pcPoint += 1
 
 
-    elif userTurnGame == "3" or userTurnGame == "Siscors" or userTurnGame == "siscors":  
+elif userTurnGame == "3" or userTurnGame == "Siscors" or userTurnGame == "siscors":  
         print("You Are Playing siscors\n ")
 
         if pcPlay == "Rock":
@@ -77,5 +73,10 @@ while pcPoint <=3 or userPoint <= 3:
             print(f" Doo Doo Doo And Pc Plays ...\n .............\n {pcPlay}")
             print("The Result Is A Tie")
 
-    pcPoint ==3 or userPoint == 3
-    break
+
+
+
+           
+            
+            
+         
