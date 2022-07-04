@@ -1,0 +1,81 @@
+
+
+
+
+
+import os
+
+os.system("cls")
+
+userPhonebook = []
+while True:
+
+#Phonebook Menu
+    PhonebookMenu = input("1-Add User \n2-Search User \n3-Delete User \n4-Show All Users \n5-About App \n0-Exit App \n\n\n  Plz Enter Your Choiced Number:\n")
+
+#Add User    
+    if PhonebookMenu == "1":
+        userName = input("Plz Enter Your Name :\n").lower()
+        userNumber = input("Plz Enter Your Number :\n").lower()
+        
+        
+        
+        fullUserData = userName + ":" + userNumber
+        
+        userPhonebook.append(fullUserData)
+        
+#Search User
+    if PhonebookMenu == "2":
+        userSearch = input("Enter The Name Or Number You Want to Search:\n ").lower()
+        template =[]
+        for i in userPhonebook:
+
+            if userSearch == i.split(":")[0] or  userSearch==i.split(":")[1] :
+                print(f"{i} is In The List")
+                template.append(i)
+                
+            elif len(template)==0:
+                print("The Name Or Number You Entered Is Not In the List")
+                break
+                
+
+#Delete User
+    if PhonebookMenu == "3":
+        
+        userRemove = input("Enter The Name Or Number You Want To Delete:\n").lower()
+        
+        for i in userPhonebook:
+            if userRemove == i.split(":")[0] or  userRemove==i.split(":")[1] :
+                userPhonebook.remove(i)
+                print(userPhonebook)
+                print("The Name Or Number You Entered Was Deleted")
+            else:
+                print("There Is Not A User To Delete")
+                break
+                 
+
+
+#Show All Users
+    if PhonebookMenu == "4":
+        
+        print(userPhonebook)
+
+
+#About App
+    if PhonebookMenu == "5":
+        print("This Program That You Are Using Is Written By 'Amir Alijani'\n Thank You For Using Our App\nContact Me By The Number Of 09350700852")
+
+
+#Exit App
+    if PhonebookMenu == "0":
+        print("Thank You For Using Our App")
+        
+        break
+
+
+    
+
+
+
+
+
