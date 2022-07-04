@@ -1,0 +1,30 @@
+
+
+
+import os
+import random
+
+os.system("cls")
+
+x="y"
+while x=="y":
+    wordList = ["affix" , "avenue" , "awkward" , "beekeeper" , "boggle" , "cobweb" , "cycle" , "disavow" , "duplex" , "equip" , "exodus" , "funny" , "galaxy" , "gossip" , "icebox" , "injury" ,  "ivory" , "jackpot" , "jelly" , "jockey" , "joking" , "joyful" , "jumbo" , "kayak" , "kiosk" ,  "lengths" , "lucky" , "luxury" , "lymph" , "nightclub" , "onyx" , "ovary" , "pajama" , "pneumonia" , "pshaw" , "puppy" , "scratch" , "staff" , "stretch"]
+    wordGuess = list(random.choice(wordList))
+    hangMan = ["_"] * len(wordGuess)
+    print(hangMan)
+    print("Above Is Your Word")
+
+
+    while hangMan.count("_")>0:
+        userWordGuess = input("Plz Enter A word: \n")
+        for i in range(len(wordGuess)):
+            
+            if userWordGuess == wordGuess[i]:
+                print(f"{userWordGuess} Is Correct ")
+                hangMan[i] = userWordGuess
+                print(hangMan)
+                if userWordGuess != wordGuess[i]:
+                
+                    print(f"This Word Doesn't Contain '{userWordGuess}' letter")
+                    
+    x = input("Do Yo Want To Play Again ? y/n\n")
