@@ -1,11 +1,7 @@
-
-
-
 import os
 import random
 
 os.system("Cls")
-from secrets import choice 
 
 print("Welcome To Rock Paper Scissors Game")
 
@@ -15,68 +11,86 @@ playlist = ["Rock" , "Paper" , "Siscors"]
 pcPlay = random.choice(playlist)
 
 
-userTurnGame = input(" Plz Choose Your Choice From One Of Three Below Items\n 1-Rock\n 2-Paper\n 3-Siscors \n")
-pcPoint = 0
-userPoint = 0
+x="y"
+while x=="y":
+    userTurnGame = input(" Plz Choose Your Choice From One Of Three Below Items\n 1-Rock\n 2-Paper\n 3-Siscors \n")
+    
 
     
-if userTurnGame == "1" or userTurnGame == "Rock" or userTurnGame == "rock":
-        print("You Are Playing Rock \n ")
-    
-        if pcPlay == "Rock":
-            print(f" Doo Doo Doo And Pc Plays ...\n .............\n {pcPlay}\n")
-            print("The Result Is A Tie")
+    while True:
+        pcPoint = 0
+        userPoint = 0
+        
+        
+        if userTurnGame == "1" or userTurnGame == "Rock" or userTurnGame == "rock":
+                    print("You Are Playing Rock \n ")
+                
+                    if pcPlay == "Rock":
+                        print(f" Doo Doo Doo And Pc Plays ...\n .............\n {pcPlay}\n")
+                        print("The Result Is A Tie")
+                        print(f"Result is : you = {userPoint} / Pc = {pcPoint}")
+                        break
+                    elif pcPlay == "Paper":
+                        print(f" Doo Doo Doo And Pc Plays ...\n .............\n {pcPlay}")
+                        print("Pc Is The Winner , Paper Eats Rock ")
+                        pcPoint +=1
+                        print(f"Result is : you = {userPoint} / Pc = {pcPoint}")
 
-        elif pcPlay == "Paper":
-            print(f" Doo Doo Doo And Pc Plays ...\n .............\n {pcPlay}")
-            print("Pc Is The Winner , Paper Eats Rock ")
-            pcPoint += 1
+                        break
+                    elif pcPlay == "Siscors":
+                        print(f" Doo Doo Doo And Pc Plays ...\n .............\n {pcPlay}")
+                        print("You Are The Winner , Rock Break Siscors  ")
+                        userPoint += 1
+                        print(f"Result is : you = {userPoint} / Pc = {pcPoint}")
+                        break
+                
+        elif userTurnGame == "2" or userTurnGame == "Paper" or userTurnGame == "paper": 
+                    print("You Are Playing Paper\n")
 
-        elif pcPlay == "Siscors":
-            print(f" Doo Doo Doo And Pc Plays ...\n .............\n {pcPlay}")
-            print("You Are The Winner , Rock Break Siscors  ")
-            userPoint += 1
+                    if pcPlay == "Rock":
+                        print(f" Doo Doo Doo And Pc Plays ...\n .............\n {pcPlay}\n")
+                        print("You Are The Winner , Paper Eats Rock")
+                        userPoint += 1
+                        print(f"Result is : you = {userPoint} / Pc = {pcPoint}")
+                        break
+                    elif pcPlay == "Paper":
+                        print(f" Doo Doo Doo And Pc Plays ...\n .............\n {pcPlay}")
+                        print("The Result Is A Tie ")
+                        print(f"Result is : you = {userPoint} / Pc = {pcPoint}")
+                        break
+                    elif pcPlay == "Siscors":
+                        print(f" Doo Doo Doo And Pc Plays ...\n .............\n {pcPlay}")
+                        print("PC Is The Winner , Siscors Torn Paper  ")
+                        pcPoint += 1
+                        print(f"Result is : you = {userPoint} / Pc = {pcPoint}")
+                        break
 
-    
-elif userTurnGame == "2" or userTurnGame == "Paper" or userTurnGame == "paper": 
-        print("You Are Playing Paper\n")
+        elif userTurnGame == "3" or userTurnGame == "Siscors" or userTurnGame == "siscors":  
+                    print("You Are Playing siscors\n ")
 
-        if pcPlay == "Rock":
-            print(f" Doo Doo Doo And Pc Plays ...\n .............\n {pcPlay}\n")
-            print("You Are The Winner , Paper Eats Rock")
-            userPoint += 1
+                    if pcPlay == "Rock":
+                        print(f" Doo Doo Doo And Pc Plays ...\n .............\n {pcPlay}\n")
+                        print("PC Is The Winner , Rock Break Siscors ")
+                        pcPoint += 1
+                        print(f"Result is : you = {userPoint} / Pc = {pcPoint}")
+                        break
 
-        elif pcPlay == "Paper":
-            print(f" Doo Doo Doo And Pc Plays ...\n .............\n {pcPlay}")
-            print("The Result Is A Tie ")
+                    elif pcPlay == "Paper":
+                        print(f" Doo Doo Doo And Pc Plays ...\n .............\n {pcPlay}")
+                        print("You Are The Winner , Siscors Torn Paper ")
+                        userPoint += 1
+                        print(f"Result is : you = {userPoint} / Pc = {pcPoint}")
+                        break
 
-        elif pcPlay == "Siscors":
-            print(f" Doo Doo Doo And Pc Plays ...\n .............\n {pcPlay}")
-            print("PC Is The Winner , Siscors Torn Paper  ")
-            pcPoint += 1
+                    elif pcPlay == "Siscors":
+                        print(f" Doo Doo Doo And Pc Plays ...\n .............\n {pcPlay}")
+                        print("The Result Is A Tie")
+                        print(f"Result is : you = {userPoint} / Pc = {pcPoint}")
+                        break
 
+    if pcPoint==3:
+        print("pc Is The Winner ")
+    elif userPoint==3:
+        print("You Are The The Winner ")
 
-elif userTurnGame == "3" or userTurnGame == "Siscors" or userTurnGame == "siscors":  
-        print("You Are Playing siscors\n ")
-
-        if pcPlay == "Rock":
-            print(f" Doo Doo Doo And Pc Plays ...\n .............\n {pcPlay}\n")
-            print("PC Is The Winner , Rock Break Siscors ")
-            pcPoint += 1
-            
-        elif pcPlay == "Paper":
-            print(f" Doo Doo Doo And Pc Plays ...\n .............\n {pcPlay}")
-            print("You Are The Winner , Siscors Torn Paper ")
-            userPoint += 1
-
-        elif pcPlay == "Siscors":
-            print(f" Doo Doo Doo And Pc Plays ...\n .............\n {pcPlay}")
-            print("The Result Is A Tie")
-
-
-
-
-           
-            
-            
-         
+x =input(print("Do You Want To Play Again?y/n\n"))       
