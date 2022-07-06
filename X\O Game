@@ -1,0 +1,176 @@
+
+
+
+import os
+import turtle
+
+os.system("cls")
+
+
+#Creating Window
+window = turtle.Screen()
+window.title("XO Game")
+window.bgcolor("#ffbf8d")
+window.setup(500 , 500)
+
+
+#Creating Mouse
+click = turtle.Turtle()
+click.shape("arrow")
+click.shapesize(.5 , .5)
+click.speed(3)
+click.width(3)
+
+
+
+#Creating Table Of Xo
+click.penup()
+click.goto(-200 , -100)
+click.pendown()
+click.forward(100)
+click.rt(90)
+click.forward(100)
+click.lt(180)
+click.forward(300)
+click.rt(180)
+click.forward(100)
+click.rt(90)
+click.forward(100)
+click.rt(180)
+click.forward(300)
+click.lt(180)
+click.forward(100)
+click.rt(90)
+click.forward(100)
+click.rt(180)
+click.forward(300)
+click.lt(180)
+click.forward(100)
+click.lt(90)
+click.forward(100)
+click.rt(180)
+click.forward(200)
+
+
+#Creating X's And O's
+click.ht()
+click.width(5)
+
+#First Circle Right Up
+click.penup()
+click.goto(50 ,30)
+click.color("Green")
+click.pendown()
+click.circle(20)
+
+
+#First X Left Down
+click.penup()
+click.goto(-150 ,-150)
+click.pendown()
+click.color("Red")
+click.goto(-130 ,-170)
+click.goto(-170 ,-130)
+click.penup()
+click.goto(-130 ,-170)
+click.goto(-130 ,-130)
+click.pendown()
+click.goto(-170 ,-170)
+
+
+#Second Circle Right Middle
+click.penup()
+click.goto(50 ,-150)
+click.lt(90)
+click.fd(100)
+click.goto(70 ,-50)
+click.color("Green")
+click.pendown()
+click.circle(20)
+
+#Second X Right Down
+click.penup()
+click.goto(50 ,-150)
+click.color("Red")
+click.pendown()
+click.goto(30 ,-170)
+click.goto(70 ,-130)
+click.penup()
+click.goto(30 ,-170)
+click.goto(30 ,-130)
+click.pendown()
+click.goto(70 ,-170)
+
+
+#Third Circle Middle Bottom
+click.penup()
+click.goto(-30 ,-150)
+click.color("Green")
+click.pendown()
+click.circle(20)
+
+
+#third X Middle Middle
+click.penup()
+click.goto(-50 ,-50)
+click.pendown()
+click.color("Red")
+click.goto(-30 ,-70)
+click.goto(-70 ,-30)
+click.penup()
+click.goto(-30 ,-30)
+click.pendown()
+click.goto(-70 ,-70)
+
+
+
+#Fourth Circle Middle Up
+click.penup()
+click.goto(-30 ,50)
+click.color("Green")
+click.pendown()
+click.circle(20)
+
+
+
+#Fourth X Left Up
+click.penup()
+click.goto(-150 ,50)
+click.pendown()
+click.color("Red")
+click.goto(-130 ,70)
+click.goto(-170 ,30)
+click.penup()
+click.goto(-130 ,70)
+click.goto(-130 ,30)
+click.pendown()
+click.goto(-170 ,70)
+
+
+
+
+#Last Circle Left Middle
+click.penup()
+click.goto(-130 ,-50)
+
+click.color("Green")
+click.pendown()
+click.circle(20)
+
+
+
+#Determine The Winner
+click.color("Yellow")
+
+click.penup()
+click.goto(-150 ,50)
+click.pendown()
+click.goto(50 ,-150)
+winnerStatement = window.numinput("Winner","x Is The Winner!!!!")
+
+
+
+
+
+
+window.exitonclick()
