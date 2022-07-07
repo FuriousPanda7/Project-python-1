@@ -1,0 +1,44 @@
+
+
+
+
+
+
+import os
+import turtle
+import random
+
+os.system("cls")
+
+
+#Creating Window
+
+window = turtle.Screen()
+window.title("Random Squares")
+window.bgcolor("black")
+window.setup(1000 , 700)
+
+#Create Mouse
+click = turtle.Turtle()
+
+
+
+#Color Of Squares
+
+myColor = ["blue" ,"red" , "green" , "orange" , "white" , "Cyan" , "yellow" , "purple" , "brown" , "pink"]
+
+
+while True :
+    for i in range(4):
+        
+        click.fd(100)
+        click.lt(90)
+
+    for x in range(9):
+        click.color(random.choice(myColor))
+        
+        
+    click.penup()
+    click.goto(random.randint(-500,500) , random.randint(-300,300))
+    click.pendown()
+        
