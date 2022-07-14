@@ -1,0 +1,147 @@
+
+
+
+
+
+from tkinter import *
+
+
+
+
+
+
+window = Tk()
+window.title("Calculator")
+window.geometry("500x500")
+window.config(bg="white")
+window.resizable(False,False)
+
+#text that shhown in box
+text = Entry(window,justify=CENTER,bd=3,relief="ridge")
+text.focus()
+text.place(width=220,height=120,x=120,y=50)
+
+
+
+
+
+#button of dot
+buttondot= Button(window, text=' . ', fg='black', bg='gray', relief="solid")
+buttondot.place(width=50 , height=50 , x=230 , y=405)
+
+
+#button of minus plus
+buttonminusplus= Button(window, text='-/+', fg='black', bg='gray', relief="solid")
+buttonminusplus.place(width=50 , height=50 , x=120 , y=405)
+
+
+#button of 0
+button00= Button(window, text=' 0 ', fg='black', bg='gray', relief="flat")
+button00.place(width=50 , height=50 , x=175 , y=405)
+
+#button of 1
+button01= Button(window, text=' 1 ', fg='black', bg='gray', relief="flat",command=show)
+button01.place(width=50 , height=50 , x=120 , y=350)
+
+#button of 2
+button02= Button(window, text=' 2 ', fg='black', bg='gray', relief="flat")
+button02.place(width=50 , height=50 , x=175 , y=350)
+
+#button of 3
+button03= Button(window, text=' 3 ', fg='black', bg='gray', relief="flat")
+button03.place(width=50 , height=50 , x=230 , y=350)
+
+#button of 4
+button04= Button(window, text=' 4 ', fg='black', bg='gray', relief="flat")
+button04.place(width=50 , height=50 , x=120 , y=295)
+
+
+#button of 5
+button05= Button(window, text=' 5 ', fg='black', bg='gray', relief="flat")
+button05.place(width=50 , height=50 , x=175 , y=295)
+
+
+#button of 6
+button06= Button(window, text=' 6 ', fg='black', bg='gray', relief="flat")
+button06.place(width=50 , height=50 , x=230 , y=295)
+
+
+
+
+#button of 7
+button07= Button(window, text=' 7 ', fg='black', bg='gray', relief="flat")
+button07.place(width=50 , height=50 , x=120 , y=240)
+
+
+
+
+#button of 8
+button08= Button(window, text=' 8 ', fg='black', bg='gray', relief="flat")
+button08.place(width=50 , height=50 , x=175, y=240)
+
+
+
+#button of 9
+button09= Button(window, text=' 9 ', fg='black', bg='gray', relief="flat")
+button09.place(width=50 , height=50 , x=230 , y=240)
+
+
+#button of equivelent
+buttonequivelent= Button(window, text=' = ', fg='black', bg='gray', relief="solid")
+buttonequivelent.place(width=50 , height=50 , x=285 , y=405)
+
+
+#button of plus
+buttonplus= Button(window, text=' + ', fg='black', bg='gray', relief="solid")
+buttonplus.place(width=50 , height=50 , x=285 , y=350)
+
+
+#button of minus
+buttonplus= Button(window, text=' - ', fg='black', bg='gray', relief="solid")
+buttonplus.place(width=50 , height=50 , x=285 , y=295)
+
+
+
+#button of multiple
+buttonmultiple= Button(window, text=' x ', fg='black', bg='gray', relief="solid")
+buttonmultiple.place(width=50 , height=50 , x=285 , y=240)
+
+
+#button of devide
+buttondevide= Button(window, text=' / ', fg='black', bg='gray', relief="solid")
+buttondevide.place(width=50 , height=50 , x=285 , y=185)
+
+
+#button of devide
+buttondevide= Button(window, text=' / ', fg='black', bg='gray', relief="solid")
+buttondevide.place(width=50 , height=50 , x=285 , y=185)
+
+
+#button of remaining
+buttonremaining= Button(window, text=' % ', fg='black', bg='gray', relief="solid")
+buttonremaining.place(width=50 , height=50 , x=230 , y=185)
+
+#button of power
+buttonpower= Button(window, text=' ^ ', fg='black', bg='gray', relief="solid")
+buttonpower.place(width=50 , height=50 , x=175 , y=185)
+
+#button of clear
+buttonclear= Button(window, text=' C ', fg='black', bg='gray', relief="solid")
+buttonclear.place(width=50 , height=50 , x=120 , y=185)
+
+
+
+
+
+
+
+
+
+
+
+lbl=Label(window,text="")
+lbl.pack
+
+
+
+window.mainloop()
