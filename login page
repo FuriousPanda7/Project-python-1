@@ -1,0 +1,51 @@
+
+
+
+
+from cgitb import text
+from tkinter import *
+
+
+
+
+
+
+window = Tk()
+window.title("Login Window")
+window.geometry("400x300")
+window.config(bg="gray")
+window.resizable(False,False)
+
+
+
+print("ok")
+
+
+
+
+#username lable
+usernamelable= Label(window, text=' User Name ', fg='yellow', bg='black', relief="groove")
+usernamelable.place(width=100 , height=20, x=50 , y=100)
+
+#password lable
+passwordlable= Label(window, text=' Password ', fg='yellow', bg='black', relief="groove")
+passwordlable.place(width=100 , height=20, x=50 , y=130)
+
+
+#username text
+usernametext= Entry(justify="left")
+usernametext.place(width=150 , height=20, x=200 , y=100)
+
+#password text
+passwordtext= Entry(justify="left")
+passwordtext.place(width=150 , height=20, x=200 , y=130)
+
+
+
+#login button
+loginbutton= Button(window, text=' Login ', fg='Yellow', bg='black', relief="solid")
+loginbutton.place(width=150 , height=50 , x=120 , y=165)
+
+
+
+window.mainloop()
