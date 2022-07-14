@@ -40,7 +40,7 @@ button00= Button(window, text=' 0 ', fg='black', bg='gray', relief="flat")
 button00.place(width=50 , height=50 , x=175 , y=405)
 
 #button of 1
-button01= Button(window, text=' 1 ', fg='black', bg='gray', relief="flat",command=show)
+button01= Button(window, text=' 1 ', fg='black', bg='gray', relief="flat")
 button01.place(width=50 , height=50 , x=120 , y=350)
 
 #button of 2
