@@ -1,0 +1,16 @@
+class Addition:
+
+    def __init__(self, num1, num2):
+        self.num1 = num1
+        self.num2 = num2
+
+    def printNumbers():
+        return userFirstNumber + userSecondNumber
+
+
+userFirstNumber = int(input("Plz Enter Your First Number :\n"))
+userSecondNumber = int(input("Plz Enter Your Second  Number :\n"))
+
+Addition(userFirstNumber, userSecondNumber)
+
+print(Addition.printNumbers())
