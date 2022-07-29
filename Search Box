@@ -1,0 +1,50 @@
+
+
+import tkinter as tk
+
+nameList = open("listOfNames.txt", mode="a")
+
+nameList.write("Amir,Ali,Nima,Amin,Hassan,Hossein,Mamad,reza")
+
+# def userEntryName():
+#     userEntryName01 = userText.get()
+#     if userEntryName01 in  :
+#         print("The Name Is Available")
+#     else:
+#         print("The Name Is Not Available")
+
+        
+
+# SearchList()
+    
+window = tk.Tk()
+window.title("Search Box")
+window.geometry("400x300")
+window.config(bg="#2030a5")
+
+userText = tk.Entry(
+    justify="center"
+)
+userText.focus()
+userText.place(width="200", height="25", x="100", y="50")
+
+userButton = tk.Button(
+    window,
+    text="Search",
+    background="#e4ea21",
+    fg="Black",
+    font="50",
+    
+)
+
+userButton.place(width="200", height="50", x="100", y="120",)
+
+userLable = tk.Label(
+    window,
+    text="Result",
+    font="35"
+)
+userLable.place(width="200", height="50", x="100", y="200")
+
+
+window.mainloop()
